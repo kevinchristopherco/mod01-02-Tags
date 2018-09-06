@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Form</title>
+</head>
+<body>
+   <!--action is a form attribute on the act of sending the form, method is a form attribute on how form will be sent-->
+   <form action ="method">
+    <label for="username">Username:</label><input type ="text" name="username" required="true" placeholder="user123"
+       id="username">
+    <br>
+
+    <label>Password:</label><input type ="password" name="password">
+    <br>
+
+    <!--using 'checked' is for radio or checkbox-->
+    <label>Meal:</label>
+    <input type="radio" name="meal" value="breakfast">Breafkast
+    <input type="radio" name="meal" value="lunch">Lunch
+    <input type="radio" name="meal" value="dinner">Dinner
+    <br>
+
+    <label>Utensils:</label>
+    <input type="checkbox" name="utensil" value="spoon">Spoon
+    <input type="checkbox" name="utensil" value="fork">Fork
+    <input type="checkbox" name="utensil" value="knife">Knife
+    <br>
+
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email">
+    <br>
+
+    <label for="age">Age</label>
+    <input type="number" name="age" id="age" min=0>
+    <br>
+
+    <textarea name="comments">Write your comment here</textarea>
+    <br>
+
+    <!--using 'selected' is for dropdown-->
+    <select name="tvstation">
+         <option value="abscbn">ABS-CBN</option>
+         <option value="gma">GMA</option>
+         <option value="tv5">TV 5</option>
+    </select>
+    <br>
+
+    <input type="file" name="profile_pic"></input>
+    
+    <!--button is a general purpose button-->
+    <button>Hello</button>
+
+    <!--submit button is solely for submitting-->
+    <input type="submit" value="Log in">
+
+    <fieldset>
+        <legend>Contact details:</legend>
+        <label>Email: <input type="email" name="email"></label>
+        <label>Mobile: <input type="number" name="contact_number"></label>
+    </fieldset>
+   </form>
+</body>
+</html>

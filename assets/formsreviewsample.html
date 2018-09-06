@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>ReviewForm</title>
+</head>
+<body>
+   <!--action is a form attribute on the act of sending the form, method is a form attribute on how form will be sent-->
+  <form action="method">
+   <fieldset>
+    <legend>Your Details</legend>
+    <label for="name">Name:<input type ="text" name="name" required="true" id="name"></label>
+    <label for="email">Email:<input type ="email" name="email" required="true" id="email"></label>
+   </fieldset>
+   <br>
+   
+   <fieldset>
+    <legend>Your Review</legend>
+    <label for="hear about us">How did you here about us?</label>
+    <select id="hear about us" name="hear about us">
+      <option value="google">Google</option>
+      <option value="facebook">Facebook</option>
+      <option value="instagram">Instagram</option>
+    </select><br>
+
+    <label for="options">Would you visit us again?</label><br>
+      <input type="radio" name="options" value="yes">Yes
+      <input type="radio" name="options" value="no">No
+      <input type="radio" name="options" value="maybe">Maybe
+    <br>
+
+    <label for="comments">Comments:</label><br>
+    <textarea name="comments" id="comments">Write your comments here</textarea>
+    <br>
+    <input type="checkbox" name="updates" checked="true" id="updates"><label>Sign me up for email updates</label>
+    <br>
+
+    <button>Submit Review</button>
+   </fieldset>
+  </form>
+</body>
+</html>
